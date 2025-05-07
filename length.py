@@ -80,8 +80,7 @@ def upload_image():
                 # Label the distance on the image
                 distance_label = f"{int(max_distance)} px"
                 text_position = (best_midpoint[0] + 10, best_midpoint[1] - 10)
-                cv2.putText(output, distance_label, text_position, cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 0), 2)
-
+                cv2.putText(output, distance_label, text_position, cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 225), 5)
 
 
         # Save the result
